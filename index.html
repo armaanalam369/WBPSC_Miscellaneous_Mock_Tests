@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mock Test Quiz</title>
+  <!-- Apply saved theme before first paint (prevents a white flash in dark mode) -->
+  <script>
+    try {
+      var t = localStorage.getItem('wcmt_theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <div class="topbar-row">
+      <button class="brand" data-act="tab" data-v="home" id="brand">Mock Tests</button>
+      <button class="btn icon" data-act="toggleTheme" id="themeBtn" aria-label="Switch light / dark mode"></button>
+    </div>
+    <nav class="tabs" id="tabs" aria-label="Main"></nav>
+  </header>
+
+  <main id="app"></main>
+  <div id="modal"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- data.js = settings.  questions/set-XX.js = one file per mock set (edit these).  app.js = engine (never edit). -->
+  <script src="data.js"></script>
+  <script src="questions/set-01.js"></script>
+  <script src="questions/set-02.js"></script>
+  <script src="questions/set-03.js"></script>
+  <script src="questions/set-04.js"></script>
+  <script src="questions/set-05.js"></script>
+  <script src="questions/set-06.js"></script>
+  <script src="questions/set-07.js"></script>
+  <script src="questions/set-08.js"></script>
+  <script src="questions/set-09.js"></script>
+  <script src="questions/set-10.js"></script>
+  <script src="questions/set-11.js"></script>
+  <script src="questions/set-12.js"></script>
+  <script src="questions/set-13.js"></script>
+  <script src="questions/set-14.js"></script>
+  <script src="questions/set-15.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
