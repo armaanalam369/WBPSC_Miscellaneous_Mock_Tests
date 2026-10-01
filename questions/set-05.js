@@ -1,5 +1,5 @@
 /* =====================================================================
-   questions/set-16.js  —  SET-16
+   questions/set-05.js  —  SET-05
    ---------------------------------------------------------------------
    Add this set's questions inside the [ ... ] below, one block per question:
 
@@ -15,7 +15,7 @@
 // Source: West Bengal Urdu Academy Pre-Recruitment Coaching (WBUA MISC-2024 PH-I VST-5, Date: 24.09.2026). Complete: 100 questions.
 // Questions with a "flag" highlight official answer key discrepancies or biological/historical errata (Q4, Q6, Q16, Q52, Q67).
 
-registerSet("SET-16", [
+registerSet("SET-05", [
 
   // ==================================================================
   // 01. ANCIENT HISTORY  —  3 questions  (Q31, Q52, Q53)
